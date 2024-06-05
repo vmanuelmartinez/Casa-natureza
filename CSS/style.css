@@ -1,0 +1,138 @@
+body {
+    background-color: #E5E5E5;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    margin: auto;
+    font-size: 30px;
+    width: 85%;
+    /* O site é ajustado em width de 80% por default */
+    text-align: justify;
+    background-color: #ffffff;
+}
+
+.nav {
+
+    height: 259px;
+    background-color: #5F6F52;
+    padding: 10px;
+}
+
+.nav h1 {
+    padding: 5px;
+    font-size: 70px;
+    margin-left: 40px;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 30px;
+    font-size: 36px;
+}
+
+.menu ul li input {
+    font-size: 24px;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+}
+
+.container-carrusel {
+    height: 361px;
+    background: linear-gradient(#485941, #697473, #415948);
+    display: flex;
+    justify-content: center;
+
+}
+
+.box-img {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    margin: 80px 30px 70px 40px;
+}
+
+.box-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+hr{
+    height: 2px;
+    background-color: #415948;
+}
+
+.container {
+    display: flex;
+    padding: 5px;
+    margin: auto;
+}
+
+.box{
+    margin: 10px;
+    padding: 20px;
+}
+
+.box img {
+    width: 650px;
+    height: 400px;
+}
+
+.box ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.box ul li {
+    margin-right: 20px;
+}
+
+.box ul li img {
+    height: 20px;
+    width: 20px;
+}
+
+
+.box1{ background-color: #A9B388 ;}
+.box2{ background-color: #F9EBC7 ;}
+
+.container-footer{
+    width: 100%;
+    height: 100%;
+    background-color: #985E3B;
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li{
+    list-style: none;
+    display: inline;
+    margin: 5px;
+}
+
+.footer ul li img{
+    width: 82px;
+    height: 82px;
+    margin: 10px;
+}
+
+
+
+
+
