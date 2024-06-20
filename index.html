@@ -2,17 +2,20 @@
 <html lang="pt-br">
 
 <head>
+    <title>Casa Natureza</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/IMG/icono-página.ico" type="image/x-icon">
-    <title>Casa Natureza</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/carrossel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icon@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <div class="main">
-        <div class="nav"> <!---Abre nav-->
+    <div class="main"> <!--abre main-->
+        <div class="nav"> <!--abre nav-->
             <h1>CASA NATUREZA</h1>
             <div class="menu">
                 <ul>
@@ -20,70 +23,113 @@
                     <li>Sobre</li>
                     <li>Categorías</li>
                     <li>Contacto</li>
-                    <li> <input type="text" value="Buscar"></li>
+                    <li> <input type="text" placeholder="Buscar"></li>
                 </ul>
-            </div>
-        </div> <!--Fecha nav-->
+            </div> <!--cierra menu-->
+        </div> <!--cierra nav-->
 
-        <div class="container-carrusel">
 
-            <div class="box-img">
-                <img src="./IMG/circle_img3.jpg" alt="">
-            </div>
+        <div id="carrossel" class="carousel slide"> <!--creamos carrossel-->
 
-            <div class="box-img">
-                <img src="./IMG/circle_img1.jpg" alt="">
-            </div>
-
-            <div class="box-img">
-                <img src="./IMG/circle_img.jpg" alt="">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
 
-            <div class="box-img">
-                <img src="./IMG/ai-generated-8686090_640.jpg" alt="">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="IMG/banner-carrossel3.jpg" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="IMG/banner-carrossel1.jpg" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="IMG/banner-carrossel2.jpg" class="d-block w-100" alt="...">
+                </div>
             </div>
 
-            <div class="box-img">
-                <img src="./IMG/Banner.jpg" alt="">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
 
-        </div> <!--Fecha Container Carrusel-->
+            <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
 
-        <hr> <!--Linha divisoria-->
+        </div>
 
-        <div class="container">
-            <div class="box box1" box1>
-                <p>Conheca nossos produtos</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sint architecto odit eius illo, nam,
-                    deleniti numquam iste beatae quia quidem quam sit eligendi iusto placeat tenetur incidunt! Facere,
-                    a.</p>
-                <img src="./img/10dfbb520b9dedf318c5b96e64c047af.jpg" alt="">
-                <ul>
-                    <li><img src="/IMG/icon_comentario.png" alt=""></li>
-                    <li>Compartilhar</li>
-                    <li><img src="IMG/icon_twitter.png" alt=""></li>
-                    <li><img src="IMG/icon_ig.png" alt=""></li>
-                </ul>
-            </div>
+    </div> <!--cierra main-->
+    <hr> <!--Linha divisoria-->
 
-            <div class="box box2">
-                <p>Conheca nossos produtos</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sint architecto odit eius illo,
-                    nam, deleniti numquam iste beatae quia quidem quam sit eligendi iusto placeat tenetur incidunt!
-                    Facere, a.</p>
-                <img src="./img/ai-generated-8686090_640.jpg" alt="">
-                <ul>
-                    <li><img src="/IMG/icon_comentario.png" alt=""></li>
-                    <li>Compartilhar</li>
-                    <li><img src="IMG/icon_twitter.png" alt=""></li>
-                    <li><img src="IMG/icon_ig.png" alt=""></li>
-                </ul>
-            </div>
+    <div class="container">
 
-           
 
-        </div> <!--fecha main-->
+        <div class="card-horizontal">
+            <div class="box box1">Div 1</div>
+            <div class="box box2">Div 2</div>
+        </div>
 
+
+
+        <div class="card-vertical">
+            <div class="box box3">Div 3</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    
         <div class="container-footer">
             <div class="footer">
                 <p>Desenvolvido por Victor Martinez</p>
@@ -97,9 +143,5 @@
                 </ul>
 
               
-            </div>
-        
-        </div>
-</body>
-
-</html>
+         
+        -->
