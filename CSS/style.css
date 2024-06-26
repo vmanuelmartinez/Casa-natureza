@@ -175,18 +175,23 @@ hr {
     width: 500px;
     height: 250px;
     margin: 10px;
-    background-color: #727385;
-
+    border: none;
 }
 
-.card-horizontal .card-1 {background-color: #A9B388;}
-.card-horizontal .card-2 {background-color: #F9EBC7;}
+.card-horizontal img{
+    width: 250px;
+    height: 200px;
+}
+
+.card-horizontal .c1{ background-color: #A9B388;}
+.card-horizontal .c2{ background-color: #F9EBC7;}
+.c3 { background-color: #B99470;}
 
 .card-vertical{
-    width: 500px;
+    width: 400px;
     height: 515px;
     margin: 10px;
-    background-color: #B99470;
+    
 }
 
 
