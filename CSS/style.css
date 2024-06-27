@@ -24,8 +24,8 @@ body {
     padding: 5px;
     font-size: 70px;
     margin-left: 40px;
+    color: #ccc;
 }
-
 
 .menu ul {
     padding: 0;
@@ -35,51 +35,40 @@ body {
 
 .menu ul li {
     display: inline;
-    margin: 20px;
-    font-size: 36px;
+    margin: 15px;
+    font-size: 35px;
+    color: #ccc;
 }
 
 .menu ul li input {
+   
+    width: 120px;
     font-size: 24px;
-    height: 30px;
-    /* Adjusted height */
-    border-radius: 20px;
+    height: 35px;
+    border-radius: 10px;
     border: none;
-    padding: 5px;
-    margin-left: 10px;
+    padding: 5px;   
     vertical-align: middle;
-    /* Aligns input vertically */
+    color: #ccc;
 }
-
 
 .menu ul li:hover {
-    background-color: #0f3b1c;
+    background-color: #112818;
     border-radius: 8px;
-    color: #ffffff;
     cursor: pointer;
-}
-
-.menu ul li input {
-    font-size: 24px;
-    margin-left: 10px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    padding: 5px;
 }
 
 /* Configuração do carrossel */
 #carrossel {
     width: 100%;
-    height: 400px;
+    height: 300px;
 }
 
 .carousel-inner img {
-    height: 400px;
+    height: 300px
 }
 
-.prev,
-.next {
+.prev,.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -154,97 +143,123 @@ body {
 
 /*TERMINA CARROSSEL*/
 hr {
-    height: 3px;
-    background-color: #415948;
+    height: 6px;
+    background-color: #000000;
+}
+
+.card-horizontal .c1 {
+    background-color: #A9B388;
+}
+
+.card-horizontal .c2 {
+    background-color: #dbb045;
+}
+
+.c3 {
+    background-color: #B99470;
 }
 
 /* Começa conteudo */
 
 .container {
     display: flex;
-    height: 600px;
-    background-color: #ccc;
+    height: 800px;
+    background-color: #f5d5d5;
 }
 
-.card-horizontal{
-    display: flex;
+.card-horizontal {
     flex-direction: column;
+    height: 525px;
 }
 
-.card-horizontal .card{
-    width: 500px;
-    height: 250px;
+.card-horizontal .card {
+    flex-direction: row; 
+    display: flex;
     margin: 10px;
+    width: 500px;
+    height: 260px;
     border: none;
 }
 
-.card-horizontal img{
+.card-horizontal .card img {
+    margin-left: 15px;
     width: 250px;
     height: 200px;
+    border-radius: 4px;
 }
 
-.card-horizontal .c1{ background-color: #A9B388;}
-.card-horizontal .c2{ background-color: #F9EBC7;}
-.c3 { background-color: #B99470;}
-
-.card-vertical{
-    width: 400px;
-    height: 515px;
-    margin: 10px;
-    
+.card-horizontal .card p{
+    text-align: center;
+    margin: 5px;
 }
 
+.text-icone p {
+    margin: 3px;
+    justify-content: center;  
+}
 
+.card .text-icone p {
+    margin-bottom: 10px; /* Um pequeno espaço entre o parágrafo */
+}
 
+.card .text-icone ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 2px; /* Espaço entre os elementos da lista */
+}
 
+.card .text-icone ul li {
+    display: flex;
+    align-items: center;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.card .text-icone ul li img {
+    margin-right: 1px; /*Define o espaço entre as imagens da lista */
+    width: 20px;
+    height: 20px;
+}
 
 .card-vertical {
-    display: flex;
-    align-items: flex-start;
+    width: 400px;
+    height: 528px;
+    margin: 10px;
+    border-radius: 4px;
 }
 
 
-.card-vertical .box {
-    margin-left: 10px;
-    width: 300px;
-    height: 624px;
-}
 
-.box1 {
-    background-color: #A9B388;
-}
 
-.box2 {
-    background-color: #d4ae50;
-}
 
-.box3 {
-    background-color: #B99470;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
