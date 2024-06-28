@@ -41,13 +41,12 @@ body {
 }
 
 .menu ul li input {
-   
     width: 120px;
     font-size: 24px;
     height: 35px;
     border-radius: 10px;
     border: none;
-    padding: 5px;   
+    padding: 5px;
     vertical-align: middle;
     color: #ccc;
 }
@@ -68,7 +67,8 @@ body {
     height: 300px
 }
 
-.prev,.next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -143,8 +143,8 @@ body {
 
 /*TERMINA CARROSSEL*/
 hr {
-    height: 6px;
-    background-color: #000000;
+    height: 5px;
+    background-color: dashed #114416;
 }
 
 .card-horizontal .c1 {
@@ -152,7 +152,7 @@ hr {
 }
 
 .card-horizontal .c2 {
-    background-color: #dbb045;
+    background-color: #e8ce8d;
 }
 
 .c3 {
@@ -160,72 +160,125 @@ hr {
 }
 
 /* Começa conteudo */
-
 .container {
+    border-radius: 2px;
     display: flex;
-    height: 800px;
-    background-color: #f5d5d5;
+    height: max-content;
+    background-color: #d1c7c7;
+    opacity: 1s;
 }
 
 .card-horizontal {
     flex-direction: column;
-    height: 525px;
+    height: 545px;
 }
 
 .card-horizontal .card {
-    flex-direction: row; 
+    flex-direction: row;
     display: flex;
     margin: 10px;
-    width: 500px;
+    width: 565px;
     height: 260px;
     border: none;
+    font-weight:bolder
 }
 
 .card-horizontal .card img {
     margin-left: 15px;
-    width: 250px;
+    width: 300px;
     height: 200px;
     border-radius: 4px;
 }
 
-.card-horizontal .card p{
+.card-horizontal .card p {
     text-align: center;
     margin: 5px;
 }
 
 .text-icone p {
     margin: 3px;
-    justify-content: center;  
+    justify-content: center;
 }
 
 .card .text-icone p {
-    margin-bottom: 10px; /* Um pequeno espaço entre o parágrafo */
+    margin-bottom: 10px;
+    /* Um pequeno espaço entre o parágrafo */
 }
 
 .card .text-icone ul {
     list-style: none;
     padding: 0;
     display: flex;
-    margin: 2px; /* Espaço entre os elementos da lista */
+    margin: 2px;
+    /* Espaço entre os elementos da lista */
 }
 
 .card .text-icone ul li {
     display: flex;
     align-items: center;
-
 }
 
 .card .text-icone ul li img {
-    margin-right: 1px; /*Define o espaço entre as imagens da lista */
+    margin-right: 1px;
     width: 20px;
     height: 20px;
 }
 
-.card-vertical {
-    width: 400px;
+.card-vertical {   
+    width: 300px; 
+    justify-content: center;
+    display: flex;
+    flex-direction: column;  
     height: 528px;
     margin: 10px;
     border-radius: 4px;
+    padding: 10px;
+    margin-left: 6%;  
+}
+
+.item {   
+    align-self: center;
+}
+
+.item h3{
+    border-bottom: 1px solid #000000;
+}
+
+.item img {
+    margin: 10px;
+    display: block;
+    width: 135px;
+    height: 135px;  
+    border-radius: 50%;
+    align-items: center;
+}
+/* Começa os ajustes dos botões do card vertical*/
+.item button {
+    display: block;  
+    width: 140px;
+    height: 35px;   
+    margin-bottom: 10px;  
+    background-color: #ccc;  
+    color: #000000;  
+    border: none;  
+    border-radius: 20px; 
+    cursor: pointer;  
+    transition: background-color 0.3s;  
+}
+
+.item .button-item{
+    background-color: #5F6F52;
+}
+
+.item button:hover {
+    background-color: #85aad6;  
+}
+
+#footer{
+    padding: 10px;
+    text-align: center;
+    background-color: #20749d;
+    color: #ffffff;
 }
 
 
