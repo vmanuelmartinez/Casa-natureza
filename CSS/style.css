@@ -151,6 +151,10 @@ hr {
     background-color: #A9B388;
 }
 
+.card-horizontal .c4 {
+    background-color: #8b83833c;
+}
+
 .card-horizontal .c2 {
     background-color: #e8ce8d;
 }
@@ -163,7 +167,7 @@ hr {
 .container {
     border-radius: 2px;
     display: flex;
-    height: max-content;
+    height: 820px;
     background-color: #d1c7c7;
     opacity: 1s;
 }
@@ -180,7 +184,7 @@ hr {
     width: 565px;
     height: 260px;
     border: none;
-    font-weight:bolder
+    font-weight: bolder
 }
 
 .card-horizontal .card img {
@@ -224,70 +228,142 @@ hr {
     height: 20px;
 }
 
-.card-vertical {   
-    width: 300px; 
+.card-vertical {
+    width: 300px;
     justify-content: center;
     display: flex;
-    flex-direction: column;  
-    height: 528px;
+    flex-direction: column;
+    height: 800px;
     margin: 10px;
     border-radius: 4px;
     padding: 10px;
-    margin-left: 6%;  
+    margin-left: 6%;
 }
 
-.item {   
+.item {
     align-self: center;
 }
 
-.item h3{
+.item h3 {
+    text-align: center;
     border-bottom: 1px solid #000000;
+    margin: 0px;
 }
 
 .item img {
-    margin: 10px;
+    margin: 20px;
     display: block;
     width: 135px;
-    height: 135px;  
+    height: 135px;
     border-radius: 50%;
     align-items: center;
 }
+
 /* Começa os ajustes dos botões do card vertical*/
 .item button {
-    display: block;  
-    width: 140px;
-    height: 35px;   
-    margin-bottom: 10px;  
-    background-color: #ccc;  
-    color: #000000;  
-    border: none;  
-    border-radius: 20px; 
-    cursor: pointer;  
-    transition: background-color 0.3s;  
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    background-color: #ccc;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.item .button-item{
+.item .button-item {
     background-color: #5F6F52;
 }
 
 .item button:hover {
-    background-color: #85aad6;  
+    background-color: #e8ce8d;
 }
 
-#footer{
-    padding: 10px;
+/*Estilização do footer*/
+.center-content {
+    height: 230px;
+    background-color: #ffffffb0;
+
+}
+
+.center-content h3 {
+    padding: 25px;
     text-align: center;
-    background-color: #20749d;
-    color: #ffffff;
+    color: #000;
+    font-weight: bold;
 }
 
+.item-blog {
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+.blog {
+    margin: 15px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+}
 
+.blog a{
+    text-decoration: none; /* Tirou a borda por default que tem os <a href */
+    color: #000;
+}
 
+.cor-barra {
+    background-color: #BF722A;
+    height: 70px;
+}
+/* Estilização do footer */
+.footer {
+    height: 230px;
+    width: 100%;
+    background-color: #463D2C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.item-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
 
+.item-t {
+    text-align: center;
+}
 
+.item-t h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.item-t ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.item-t ul li {
+    list-style: none;
+}
+
+.item-t ul li img {
+    width: 50px;
+    height: 50px;
+}
 
 
 
