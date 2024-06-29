@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <title>Casa Natureza</title>
+    <title>Casa Natureza - contato</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="IMG/icono-página.ico" type="image/x-icon">
     <script src="JS/carrossel.js"></script>
     <script src="JS/bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/contato.css">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/carrossel.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icon@1.11.3/font/bootstrap-icons.min.css">
 </head>
-
 <body>
     <div class="main"> <!--abre main-->
         <div class="nav"> <!--abre nav-->
             <h1>CASA NATUREZA</h1>
             <div class="menu">
                 <ul>
-                    <li>Home</li>
-                    <li> <a href="sobre.html">Sobre nós</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
                     <li><a href="contato.html">Contato</a></li>
                     <li> <input type="text" placeholder="Buscar"></li>
                 </ul>
             </div> <!--cierra menu-->
         </div> <!--cierra nav-->
-
-
-        <div id="carrossel" class="carousel slide"> <!--creamos carrossel-->
+                <div id="carrossel" class="carousel slide"> <!--creamos carrossel-->
 
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0" class="active"
@@ -67,98 +64,73 @@
 
     </div> <!--cierra main-->
 
-    <div class="container">
+    <!----::Criamos a página de contato::-->
 
-        <div class="card-horizontal">
-
-            <div class="card c1">
-                <div>
-                    <p><b>Conheça nossos produtos</b></p>
-                    <img src="IMG/img_01.jpg" width="" alt="">
-                </div>
-                <div class="text-icone">
-                    <p> <br>
-                        Transforme qualquer espaço com a beleza e vitalidade das nossas plantas de interior. Elas não só
-                        embelezam o ambiente, mas também proporcionam um toque de natureza e tranquilidade
-                    </p>
-                    <ul>
-                        <li><img src="IMG/icon_comentario.png" alt=""></li>
-                        <li><span>Compartilhar</span></li>
-                        <li><a href="https://www.instagram.com/decoracionesdecasa_/" target="_blank"><img
-                                    src="IMG/icon_twitter.png" alt=""></a></li>
-                        <li><a href="https://www.twitter.com/" target="_blank"><img src="IMG/icon_ig.png" alt=""></a>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-
-            <div class="card c4">
-                <div>
-                    <p><b>Conheça nossos produtos</b></p>
-                    <img src="IMG/img_12.jpg" width="" alt="">
-                </div>
-                <div class="text-icone">
-                    <p>
-                        <br>
-                        Adicione um toque de frescor e elegância ao seu espaço com nossas plantas de interior. Além de
-                        decorarem com estilo, elas purificam o ar e criam uma atmosfera serena e acolhedora.
-                    </p>
-                    <ul>
-                        <li><img src="IMG/icon_comentario.png" alt=""></li>
-                        <li><span>Compartilhar</span></li>
-                        <li><a href="https://www.instagram.com/decoracionesdecasa_/" target="_blank"><img
-                                    src="IMG/icon_twitter.png" alt=""></a></li>
-                        <li><a href="https://www.twitter.com/" target="_blank"><img src="IMG/icon_ig.png" alt=""></a>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-            <div class="card c2">
-                <div>
-                    <p><b>Conheça nossos produtos</b></p>
-                    <img src="IMG/img_11.jpg" width="" alt="">
-                </div>
-                <div class="text-icone">
-                    <br>
-                    <p>
-                        Adicione um toque de natureza ao seu lar com esta planta fácil de cuidar e cheia de estilo. Seja
-                        na sala, no quarto ou no escritório, ela traz um frescor natural e um visual moderno."
-                    </p>
-                    <ul>
-                        <li><img src="IMG/icon_comentario.png" alt=""></li>
-                        <li><span>Compartilhar</span></li>
-                        <li><a href="https://www.instagram.com/decoracionesdecasa_/" target="_blank"><img
-                                    src="IMG/icon_twitter.png" alt=""></a></li>
-                        <li><a href="https://www.twitter.com/" target="_blank"><img src="IMG/icon_ig.png" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="contact-container">
+        <div class="contact-esquerda">
+            <img src="IMG/icono-página.ico" alt="Imagen de contacto">
+            <div class="redes-sociais">
+                 <a href="https://twitter.com" target="_blank"><img src="IMG/icon_twitter.png" alt=""></a>
+                <a href="https://instagram.com" target="_blank"><img src="IMG/icon_ig.png" alt=""></a>
             </div>
         </div>
-
-        <div class="card-vertical c3">
-
-            <div class="item">
-                <h3>Veja mais</h3>
-                <img src="IMG/img_02.jpg" alt="">
-                <img src="IMG/img_03.jpg" alt="">
-                <img src="IMG/img_07.jpg" alt="">
-                <hr>
-            </div>
-
-            <div class="item">
-                <button value="email"> <b>Seu e-mail</b> </button>
-                <button class="button-item" value="cadastro"> <b>Cadastre-se</b></button>
-                <button>Quer receber nossas ofertas?</button>
-            </div>
+        <div class="contact-direita">
+            <form >
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Seu e-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Por favor, escreva sua mensagem aqui:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-    </div> <!--Termina container-->
+    </div>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="center-content">
         <h3>Veja nossas ultimas postagens</h3>

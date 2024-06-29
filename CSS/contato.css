@@ -1,0 +1,78 @@
+.contact-container {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #8244441a;
+    overflow: hidden;
+
+    width: 100%;
+}
+
+.contact-esquerda {
+    background-color: #c4e5ce;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.contact-left img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.redes-sociais {
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    display: ineline;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.redes-sociais a img{
+    width: 40px;
+}
+
+.contact-direita {
+    padding: 40px;
+    width: 50%;
+    background-color: #ccc;
+}
+
+.contact-direita form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-direita label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-direita input,
+.contact-direita textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-direita button {
+    padding: 10px;
+    background-color: #57654c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-direita button:hover {
+    background-color: #91c16f;
+}
