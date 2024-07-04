@@ -4,11 +4,12 @@
     border-radius: 8px;
     box-shadow: 0 0 10px #8244441a;
     overflow: hidden;
-
     width: 100%;
 }
 
 .contact-esquerda {
+    display: none;
+  
     background-color: #c4e5ce;
     padding: 20px;
     display: flex;
@@ -18,7 +19,7 @@
     width: 50%;
 }
 
-.contact-left img {
+.contact-esquerda img {
     max-width: 100%;
     border-radius: 8px;
 }
