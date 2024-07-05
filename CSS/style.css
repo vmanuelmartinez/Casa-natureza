@@ -539,3 +539,34 @@ hr {
     
 }
 
+@media(max-width: 960px){
+  
+    .card-horizontal .card { 
+        font-size: 17px;
+        font-weight: bold;
+     }
+
+    body{
+        background-color: #000;
+    }
+    .card-especial img {
+        margin-left: 20px;
+        margin-top: 30px;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+    }
+
+    .item button{
+        width: 70%;
+        height: 55px;
+        margin-left: 20%;
+    }
+      
+    .item-t ul li img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
