@@ -548,6 +548,19 @@ hr {
 
     body{
         background-color: #000;
+        width: 75%;
+    }
+
+    .menu ul li {
+        display: inline;
+        margin: 15px;
+        font-size: 25px;
+        color: #ffffff;
+    }
+
+    .nav h1{
+        font-size: 60px;
+       margin-right: 55px;
     }
     .card-especial img {
         margin-left: 20px;
