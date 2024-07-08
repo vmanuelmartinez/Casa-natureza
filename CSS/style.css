@@ -10,6 +10,10 @@ body {
     font-family: "Cinzel", serif;
 }
 
+.navbar{
+    display: none;
+}
+
 .card-especial {
     display: none;
 }
@@ -380,6 +384,10 @@ hr {
         background-color: #3e0b0b;
     }
 
+    .navbar{
+        display: none;
+    }
+
     .container {
         height: 1100px;
     }
@@ -491,6 +499,10 @@ hr {
         background-color: #119d8f;
     }
 
+    .navbar{
+        display: none;
+    }
+
     .container {
         height: 1030px;
     }
@@ -566,7 +578,58 @@ hr {
 
     body {
         background-color: #112818;
+        width: 100%;
     }
+   
+    .navbar{display: block;}
+
+    .navbar_button{
+        display: flex;
+    }
+
+    .navbar_links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar_links li{
+        text-align: center;
+    }
+
+    .navbar_links li a{
+        padding: 1rem;
+    }
+
+    .navbar_links.active{
+        display: flex;
+    }
+
+    .navbar_links.active .drop_content{
+        position: relative;
+    }
+
+    .navbar_links.active .dropdown .drop_button{
+        display: block;
+        width: 100%;
+    } 
+
+
+
+
+
+
+
+
 
     .nav h1 {
         text-align: center;
