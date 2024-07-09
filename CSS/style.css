@@ -382,7 +382,7 @@ hr {
 
 @media screen and (max-width: 1020px) {
     body {
-        background-color: #3e0b0b;
+        background-color: #ae9f9f;
     }
 
     .navbar {
@@ -494,7 +494,7 @@ hr {
 
 @media screen and (max-width: 768px) {
     body {
-        background-color: #778685;
+        background-color: #ecf7f6;
     }
 
     .navbar {
@@ -502,7 +502,7 @@ hr {
     }
 
     .container {
-        height: 1030px;
+        height: 500px;
     }
 
     .nav {
@@ -574,7 +574,7 @@ hr {
 
 .container {
     padding: 0;
-    height: 3000px;
+    height: 1925px;
 }
 
 .card-horizontal .card {
