@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 .sobre-nos {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: max-content;
-    background-color: #dfe9e4;
+    background-color: #ccc;
     align-items: center;
+}
+
+body{
+    background-color: #c3afaf;
 }
 
 .item-sobre {
@@ -26,5 +29,36 @@ h3 {
 
 .item-sobre p {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
+
+
+@media (max-width: 480px) {
+
+   
+
+    .body {
+        width: 100%;
+        background-color: #840303;
+    }
+    .nav{display: none;}
+
+    .container{
+        height: 1980px;       
+    }
+
+   
+
+    .navbar_logo img {
+        width: 60px;
+        height: 50px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #5F6F52;
+        color: #000;
+       
+    }  }

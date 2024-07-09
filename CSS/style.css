@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+@import url('contato.css');
+@import url('sobrenos.css');
+
 body {
     background-color: #E5E5E5;
     padding: 0;
@@ -10,15 +14,13 @@ body {
     font-family: "Cinzel", serif;
 }
 
-.navbar{
+.navbar {
     display: none;
 }
 
-.card-especial {
+.card-especial { /*Essa será a div-vertical que aparecerá só quando tiver uma resolução menor*/
     display: none;
 }
-
-/*Essa será a div-vertical que aparecerá só quando tiver uma resolução menor*/
 
 .nav {
     height: 260px;
@@ -378,13 +380,12 @@ hr {
     height: 50px;
 }
 
-/*aqui*/
 @media screen and (max-width: 1020px) {
     body {
         background-color: #3e0b0b;
     }
 
-    .navbar{
+    .navbar {
         display: none;
     }
 
@@ -490,16 +491,13 @@ hr {
 
 }
 
-/*aqui 2*/
-
-
 
 @media screen and (max-width: 768px) {
     body {
-        background-color: #119d8f;
+        background-color: #778685;
     }
 
-    .navbar{
+    .navbar {
         display: none;
     }
 
@@ -553,7 +551,7 @@ hr {
         font-size: 15px;
     }
 
-    .card-especial img {
+    .card-especial img {                                    
 
         width: 90px;
         height: 90px;
@@ -562,7 +560,7 @@ hr {
 
     .card-especial p {
         text-align: center;
-        font-size: 20px
+        font-size: 20px;
     }
 
     .item button {
@@ -572,132 +570,60 @@ hr {
     }
 }
 
+@media (max-width: 768px) {
 
+.container {
+    padding: 0;
+    height: 3000px;
+}
 
-@media (max-width: 480px) {
+.card-horizontal .card {
+    border: 2px solid #000;
+    display: block;
+    width: auto;
+    height: auto;
+}
 
-    body {
-        background-color: #112818;
-        width: 100%;
-    }
-   
-    .navbar{display: block;}
+.card-horizontal .card p b {
+    font-weight: bold;
+}
 
-    .navbar_button{
-        display: flex;
-    }
+.card-horizontal .card img {
+    margin: auto;
+    width: 260px;
+    height: 250px;
+}
 
-    .navbar_links{
-        display: none;
-        width: 100%;
-    }
+.card-horizontal .text-icone p {
+    margin: 0;
+    line-height: 1.5;
+}
 
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.card-horizontal .text-icone ul li {
+    margin: auto;
+    padding: 10px;
+}
 
-    .navbar_links ul{
-        flex-direction: column;
-        width: 100%;
-    }
+.card-especial {
+    border: 2px solid #000;
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #B99470;
+    font-size: 15px;
+}
 
-    .navbar_links li{
-        text-align: center;
-    }
+.card-especial img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
 
-    .navbar_links li a{
-        padding: 1rem;
-    }
-
-    .navbar_links.active{
-        display: flex;
-    }
-
-    .navbar_links.active .drop_content{
-        position: relative;
-    }
-
-    .navbar_links.active .dropdown .drop_button{
-        display: block;
-        width: 100%;
-    } 
-
-
-
-
-
-
-
-
-
-    .nav h1 {
-        text-align: center;
-        margin-left: 10%;
-        margin-top: 10px;
-        font-size: 25px;
-        color: #ffffff;
-    }
-
-    .menu ul li {
-        display: inline;
-        margin: 5px;
-        padding: 1px;
-        font-size: 18px;
-        color: #ffffff;
-    }
-    .container {
-        padding: 0;
-        height: 3000px;
-    }
-
-    .card-horizontal .card {
-        border: 2px solid #000;
-        display: block;
-        width: auto;
-        height: auto;
-    }
-
-    .card-horizontal .card p b {
-        font-weight: bold;
-    }
-
-    .card-horizontal .card img {
-        margin: auto;
-        width: 260px;
-        height: 250px;
-    }
-
-    .card-horizontal .text-icone p {
-        margin: 0;
-        line-height: 1.5;
-    }
-
-    .card-horizontal .text-icone ul li {
-        margin: auto;
-        padding: 10px;
-    }
-
-    .card-especial {
-        border: 2px solid #000;
-        display: block;
-        width: 100%;
-        height: auto;
-        background-color: #B99470;
-        font-size: 15px;
-    }
-
-    .card-especial img {
-        width: 150px;
-        height: 150px;
-        display: block;
-        margin: auto;
-        padding: 5px;
-    }
-
-    .item button {
-        justify-content: center;
-        width: 50%;
-        height: 55%;
-    }
+.item button {
+    justify-content: center;
+    width: 50%;
+    height: 55%;
+}
 }
