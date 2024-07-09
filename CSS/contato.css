@@ -8,8 +8,7 @@
 }
 
 .contact-esquerda {
-    
-  
+    display: none;  
     background-color: #c4e5ce;
     padding: 20px;
     display: flex;
@@ -75,5 +74,24 @@
 }
 
 .contact-direita button:hover {
-    background-color: #91c16f;
+    background-color: #4c8027;
 }
+
+
+@media (max-width: 480px) {
+
+   
+
+    .body {
+        width: 100%;
+    }
+    
+    .contact-esquerda{
+        display: none;
+    }
+
+    .contact-direita {
+        width: 100%;
+        background-color: #b4bdb4;
+    }
+   }
