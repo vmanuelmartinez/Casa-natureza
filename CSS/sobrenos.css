@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-color: #afa7a7;
+}
+
 .sobre-nos {
     display: flex;
     flex-direction: column;
@@ -8,19 +12,55 @@
     align-items: center;
 }
 
-body{
-    background-color: #afa7a7;
-}
-
 .item-sobre {
     width: 100%;
     height: max-content;
-    background-color: rgb(203, 198, 207);
+    background-color: #cbc6cf;
     padding: 15px;
     font-family: "Montserrat", sans-serif;
     margin: 4px;
     justify-content: center;
 }
+
+.item-sobre.historia {
+    animation: ani01;
+    animation-duration: 2s;
+}
+@keyframes ani01 {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.item-sobre.compromiso{
+    animation: ani02;
+    animation-duration: 3s;
+}
+
+@keyframes ani02{
+    from{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
+
+
+
+
 
 .item-sobre h2,
 h3 {
