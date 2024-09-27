@@ -1,84 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-
 @import url('contato.css');
 @import url('sobrenos.css');
 
-body {
-    background-color: #E5E5E5;
-    padding: 0;
-    margin: 0;
-    width: 70%;
-    margin: auto;
-    font-family: "Cinzel", serif;
+:root {
+    --color-navbar: #2f5013de;
+    --color-cardgreen: #A9B388;
+    --color-cardyellow: #F9EBC7;
+    --color-font: #000000;
+    --color-line: #000000;
+    --bk-color: #E5E5E5;
+    --color-white: #ffffff;
+    --color-hover-nav: #85977b;
+}
+
+.body {
+    background-color: var(--bk-color);
 }
 
 .navbar {
     display: none;
 }
 
-.card-especial { /*Essa será a div-vertical que aparecerá só quando tiver uma resolução menor*/
+.card-especial {
+    /*Essa será a div-vertical que aparecerá só quando tiver uma resolução menor*/
     display: none;
 }
 
 .nav {
-    height: 260px;
-    background-color: #344626;
-    padding: 10px;
+    height: 180px;
+    background-color: var(--color-navbar);
 }
 
 .nav h1 {
     padding: 5px;
-    font-size: 70px;
-    margin-left: 40px;
-    color: #ffffff;
-    text-align: center;
+    font-size: 60px;
+    margin-left: 15%;
+    color: var(--color-white);
 }
 
 .menu ul {
-    padding: 0;
-    margin: 0;
-    text-align: left;
+    margin-left: 50px;
 }
 
 .menu ul li {
     display: inline;
-    margin: 35px;
-    font-size: 35px;
-    color: #ffffff;
+    margin: 15px;
+    font-size: 25px;
+    color: var(--color-white);
+    transition: 0.5s;
+}
+
+.menu ul li:hover {
+    background-color: var(--color-hover-nav);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .menu ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 .menu ul li input {
+    /* Estilização input nav */
     width: 120px;
     font-size: 24px;
     height: 35px;
     border-radius: 10px;
     border: none;
-    padding: 5px;
+    padding: 10px;
     vertical-align: middle;
-    color: #ccc;
-}
-
-.menu ul li:hover {
-    background-color: #112818;
-    border-radius: 8px;
-    cursor: pointer;
+    color: var(--color-white);
+    transition: 0.5;
 }
 
 /* Configuração do carrossel */
 #carrossel {
     width: 100%;
-    height: 300px;
+    height: 250px;
 }
 
 .carousel-inner img {
-    height: 300px
+    height: 250px;
 }
 
 .prev,
@@ -91,8 +96,8 @@ body {
     margin-top: -22px;
     font-weight: bold;
     font-size: 28px;
-    background-color: #000000a2;
-    color: #ffffff;
+    background-color: var(--color-font);
+    color: var(--color-white);
     transition: 0.6s;
 }
 
@@ -102,13 +107,13 @@ body {
 
 .prev:hover,
 .next:hover {
-    background-color: #000000;
+    background-color: var(--color-font);
     transition: 0.6s;
 }
 
 .dot_box {
     text-align: center;
-    padding: 10px;
+
 }
 
 .dot {
@@ -116,7 +121,7 @@ body {
     width: 15px;
     height: 15px;
     margin: 0px 2px;
-    background-color: #727385;
+    background-color: #161daa;
     border-radius: 50%;
     display: inline-block;
     transition: 0.6s;
@@ -157,20 +162,19 @@ body {
 
 /*TERMINA CARROSSEL*/
 hr {
-    height: 5px;
-    background-color: dashed #114416;
+    border: 2px solid var(--color-line);
 }
 
 .card-horizontal .c1 {
-    background-color: #A9B388;
+    background-color: var(--color-cardgreen);
 }
 
 .card-horizontal .c4 {
-    background-color: #8b83833c;
+    background-color: var(--color-cardyellow);
 }
 
 .card-horizontal .c2 {
-    background-color: #e8ce8d;
+    background-color: var(--color-cardgreen)
 }
 
 .c3 {
@@ -182,8 +186,7 @@ hr {
     border-radius: 2px;
     display: flex;
     height: 820px;
-    background-color: #d1c7c7;
-    opacity: 1s;
+    background-color: var(--bk-color);
 }
 
 .card-horizontal {
@@ -195,7 +198,6 @@ hr {
     flex-direction: row;
     display: flex;
     margin: 10px;
-    width: 565px;
     height: 260px;
     border: none;
     font-family: "Montserrat", sans-serif;
@@ -203,14 +205,20 @@ hr {
 
 .card-horizontal .card img {
     margin-left: 15px;
-    width: 300px;
-    height: 200px;
+    width: 200px;
+    height: 180px;
     border-radius: 4px;
 }
 
+.card-horizontal .card h1{
+    margin-left: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center; 
+}
+
 .card-horizontal .card p {
-    text-align: center;
-    margin: 5px;
+    text-align: center;      
 }
 
 .text-icone p {
@@ -220,6 +228,7 @@ hr {
 
 .card .text-icone p {
     margin-bottom: 10px;
+    font-size: 16px
 }
 
 .card .text-icone ul {
@@ -236,23 +245,23 @@ hr {
 }
 
 .card .text-icone ul li img {
-    margin-right: 1px;
+    margin-right: 5px;
     width: 20px;
     height: 20px;
 }
 
 .card-vertical {
-    width: 300px;
+    width: 80%;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    height: 800px;
     margin: 10px;
     border-radius: 4px;
     padding: 10px;
-    margin-left: 6%;
 }
 
+
+/* começar desde aqui */
 .item {
     align-self: center;
 }
@@ -279,7 +288,7 @@ hr {
     height: 45px;
     margin-bottom: 20px;
     background-color: #ccc;
-    color: #000000;
+    color: var(--color-font);
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -287,17 +296,17 @@ hr {
 }
 
 .item .button-item {
-    background-color: #5F6F52;
+    background-color: var(--color-cardgreen)
 }
 
 .item button:hover {
-    background-color: #e8ce8d;
+    background-color: var(--color-hover-nav);
 }
 
 /*Estilização do footer*/
 .center-content {
     height: 230px;
-    background-color: #ffffffb0;
+    background-color: var(--bk-color);
 }
 
 .center-content h3 {
@@ -551,7 +560,7 @@ hr {
         font-size: 15px;
     }
 
-    .card-especial img {                                    
+    .card-especial img {
 
         width: 90px;
         height: 90px;
@@ -572,58 +581,58 @@ hr {
 
 @media (max-width: 768px) {
 
-.container {
-    padding: 0;
-    height: 1925px;
-}
+    .container {
+        padding: 0;
+        height: 1925px;
+    }
 
-.card-horizontal .card {
-    border: 2px solid #000;
-    display: block;
-    width: auto;
-    height: auto;
-}
+    .card-horizontal .card {
+        border: 2px solid #000;
+        display: block;
+        width: auto;
+        height: auto;
+    }
 
-.card-horizontal .card p b {
-    font-weight: bold;
-}
+    .card-horizontal .card p b {
+        font-weight: bold;
+    }
 
-.card-horizontal .card img {
-    margin: auto;
-    width: 260px;
-    height: 250px;
-}
+    .card-horizontal .card img {
+        margin: auto;
+        width: 260px;
+        height: 250px;
+    }
 
-.card-horizontal .text-icone p {
-    margin: 0;
-    line-height: 1.5;
-}
+    .card-horizontal .text-icone p {
+        margin: 0;
+        line-height: 1.5;
+    }
 
-.card-horizontal .text-icone ul li {
-    margin: auto;
-    padding: 10px;
-}
+    .card-horizontal .text-icone ul li {
+        margin: auto;
+        padding: 10px;
+    }
 
-.card-especial {
-    border: 2px solid #000;
-    display: block;
-    width: 100%;
-    height: auto;
-    background-color: #B99470;
-    font-size: 15px;
-}
+    .card-especial {
+        border: 2px solid #000;
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: #B99470;
+        font-size: 15px;
+    }
 
-.card-especial img {
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin: auto;
-    padding: 5px;
-}
+    .card-especial img {
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin: auto;
+        padding: 5px;
+    }
 
-.item button {
-    justify-content: center;
-    width: 50%;
-    height: 55%;
-}
+    .item button {
+        justify-content: center;
+        width: 50%;
+        height: 55%;
+    }
 }
