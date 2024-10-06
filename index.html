@@ -1,261 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <title>Casa Natureza</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="IMG/icono-página.ico" type="image/x-icon">
-    <script src="JS/bootstrap.bundle.min.js" defer></script>
-    <script src="JS/animacao.js" defer></script>
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/carrossel.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icon@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/responsividade-480.css">
+    <title>Casa Natureza</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="./JS/animacao-main.js"></script>
 </head>
 
 <body>
-
-    <div class="main"> <!--abre main-->
-
-        <div class="navbar"> <!--Este será o menu hamburguer na resolução 480px-->
-            <div class="navbar_logo"> <img src="IMG/icono-página.ico" alt=""></div>
-            <a href="#" class="navbar_button">
-                <span class="bar" id="top"></span>
-                <span class="bar" id="center"></span>
-                <span class="bar" id="botton"></span>
-            </a>
-            <div class="navbar_links">
-                <ul>
-                    <li>
-                        <div class="dropdown">
-                            <button class="drop_button">
-                                Selecione uma opção &#9660;
-                            </button>
-                            <div class="drop_content">
-                                <a href="index.html">Inicio</a>
-                                <a href="sobre.html">Sobre nós</a>
-                                <a href="contato.html">Contato</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="">Casa Natureza</a>
             </div>
+            <div class="links-center">
+                <a href="">Home</a>
+                <a href="">Produtos</a>
+                <a href="">Sobre nós</a>
+            </div>
+            <button class="nav-right">Registre-se</button>
+        </nav>
+    </header>
+
+    <main class="container-main">
+        <img src="/Casa-natureza/IMG/background-main.jpg">
+    
+        
+        <div class="content">
+            <h1>"Decoração Aconchegante: Transforme Seu Lar com Plantas"</h1>
+            <p>"Nossa missão é ajudá-lo a criar um lar naturalmente radiante e harmonioso por meio do uso de plantas de alta qualidade e produtos naturais para a decoração"</p>
+            <button>Compre agora</button>
         </div>
-
-        <div class="nav"> <!--Resolução maior que 480px-->
-            <h1>CASA NATUREZA</h1>
-            <div class="menu">
-                <ul>
-                    <li>Home</li>
-                    <li> <a href="sobre.html">Sobre nós</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li> <input type="text" placeholder="Buscar"></li>
-                </ul>
-            </div> <!--cierra menu-->
-        </div> <!--cierra nav-->
-
-        <div id="carrossel" class="carousel slide"> <!--creamos carrossel-->
-
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="IMG/banner-carrossel1.jpg" class="d-block w-100" alt="...">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="IMG/banner-carrossel3.jpg" class="d-block w-100" alt="...">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="IMG/banner-carrossel2.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <hr>
-
-    </div> <!--cierra main-->
-
-    <div class="container">
-
-        <div class="card-horizontal">
-            <div class="card c1">
-                <div>
-                    <h1>Conheça nossos produtos</h1>
-                    <img src="IMG/img_01.jpg" width="" alt="">
-                </div>
-                <div class="text-icone">
-                    <p> <br>
-                        Transforme qualquer espaço com a beleza e vitalidade das nossas plantas de interior. Elas não só
-                        embelezam o ambiente, mas também proporcionam um toque de natureza e tranquilidade
-                    </p>
-                    <ul>
-                        <li><img src="IMG/icon_comentario.png" alt=""></li>
-                        <li><span>Compartilhar</span></li>
-                        <li><a href="https://www.instagram.com/decoracionesdecasa_/" target="_blank"><img
-                                    src="IMG/icon_twitter.png" alt=""></a></li>
-                        <li><a href="https://www.twitter.com/" target="_blank"><img src="IMG/icon_ig.png" alt=""></a>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-            <div class="card c4">
-                <div>
-                    <h1>Conheça nossos produtos</h1>
-                    <img src="IMG/img_12.jpg" width="" alt="">
-                </div>
-                <div class="text-icone">
-                    <p>
-                        <br>
-                        Adicione um toque de frescor e elegância ao seu espaço com nossas plantas de interior. Além de
-                        decorarem com estilo, elas purificam o ar e criam uma atmosfera serena e acolhedora.
-                    </p>
-                    <ul>
-                        <li><img src="IMG/icon_comentario.png" alt=""></li>
-                        <li><span>Compartilhar</span></li>
-                        <li><a href="https://www.instagram.com/decoracionesdecasa_/" target="_blank"><img
-                                    src="IMG/icon_twitter.png" alt=""></a></li>
-                        <li><a href="https://www.twitter.com/" target="_blank"><img src="IMG/icon_ig.png" alt=""></a>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-            <div class="card c2">
-                <div>
-                    <h1>Conheça nossos produtos</h1>
-                    <img src="IMG/img_11.jpg" width="" alt="">
-                </div>
-                <div class="text-icone">
-                    <br>
-                    <p>
-                        Adicione um toque de natureza ao seu lar com esta planta fácil de cuidar e cheia de estilo. Seja
-                        na sala, no quarto ou no escritório, ela traz um frescor natural e um visual moderno."
-                    </p>
-                    <ul>
-                        <li><img src="IMG/icon_comentario.png" alt=""></li>
-                        <li><span>Compartilhar</span></li>
-                        <li><a href="https://www.instagram.com/decoracionesdecasa_/" target="_blank"><img
-                                    src="IMG/icon_twitter.png" alt=""></a></li>
-                        <li><a href="https://www.twitter.com/" target="_blank"><img src="IMG/icon_ig.png" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card-especial">
-                <div>
-                    <p><b>VEJA MAIS</b></p>
-                    <img src="IMG/img_03.jpg" width="" alt="">
-                    <img src="IMG/img_02.jpg" width="" alt="">
-                </div>
-                <div class="text-icone">
-                    <br>
-                    <div class="item">
-                        <button value="email"> <b>Seu e-mail</b> </button>
-                        <button class="button-item" value="cadastro"> <b>Cadastre-se</b></button>
-                        <button>Quer receber nossas ofertas?</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="card-vertical c3">
-
-            <div class="item">
-                <h3>Veja mais</h3>
-                <img src="IMG/img_02.jpg" alt="">
-                <img src="IMG/img_03.jpg" alt="">
-                <img src="IMG/img_07.jpg" alt="">
-                <hr>
-            </div>
-
-            <div class="item">
-                <button value="email"> <b>Seu e-mail</b> </button>
-                <button class="button-item" value="cadastro"> <b>Cadastre-se</b></button>
-                <button>Quer receber nossas ofertas?</button>
-            </div>
-        </div>
-
-
-    </div> <!--Termina container-->
-
-    <div class="center-content">
-        <h3>Veja nossas ultimas postagens</h3>
-
-        <div class="item-blog">
-            <div class="blog">
-                <p><a href="https://www.youtube.com/shorts/8f51nLLEPuU" target="_blank">O Equilíbrio Perfeito entre
-                        Plantas e Mobiliário na sua Casa</p></a>
-            </div>
-            <div class="blog">
-                <p><a href="https://www.youtube.com/watch?v=36FCZSqLtiM" target="_blank">Design de Jardins Interiores
-                        com Móveis Funcionais</a></p>
-            </div>
-            <div class="blog">
-                <p><a href="https://www.youtube.com/watch?v=OdW5AAMcXeg" target="_blank">Ideias para Decorar sua Sala
-                        com Plantas e Móveis Modernos</a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="cor-barra"></div>
-
-    <div class="footer">
-
-        <div class="item-footer">
-
-            <div class="item-t">
-                <h4> Copyright &copy; 2018 - 2024 Casa Natureza </h4>
-            </div>
-
-            <div class="item-t">
-                <ul>
-                    <li><a href="https://www.instagram.com/decoracionesdecasa_/" target="_blank"><img
-                                src="IMG/icon_ig.png" alt=""></a></li>
-                    <li><a href="https://www.twitter.com" target="_blank"><img src="IMG/icon_twitter.png"></a></li>
-                </ul>
-            </div>
-
-            <div class="item-t">
-                <h4>Desenvolvido por Víctor M. M. Fuentes </h4>
-            </div>
-        </div>
-
-
-
-
-
-
-    </div>
-
-
-
+    </main>
 
 </body>
-
 
 </html>
