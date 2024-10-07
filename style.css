@@ -6,6 +6,10 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 :root {
@@ -70,9 +74,10 @@ nav a {
     overflow: hidden;
 }
 
-.container-main img{
+.container-main img {
     filter: brightness(50%)
 }
+
 .content {
     position: absolute;
     top: 50%;
@@ -85,7 +90,7 @@ nav a {
 
 .content h1 {
     font-size: 48px;
-     margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .content p {
@@ -108,4 +113,68 @@ nav a {
 .content button:hover {
     background-color: var(--secundary-color);
     transition: 0.5s;
+}
+
+/* Section Collection */
+
+.collection {
+    height: 100%;
+    background-color: var(--font-color);
+
+}
+
+.titulos {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 60px;
+    border: 1px solid var(--color-fonte);
+    gap: 85px;
+}
+
+.titulos a {
+    color: var(--color-fonte);
+    font-weight: bold;
+}
+
+.collection h2 {
+    width: 656px;
+    margin: 100px 0 0 64px;
+    font-size: 48px;
+}
+
+.content-collection {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+ 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 380px;
+    gap: 2px;
+    border: 0.1px solid var(--color-fonte);
+    border-radius: 2px;
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+}
+
+.card button {
+    background-color: var(--font-color);
+    justify-content: center;
+    border: 0.1px solid var(--color-fonte);
+    width: 120px;
+    height: 28px;
+    margin-bottom: 10px;
+
 }
