@@ -1,0 +1,111 @@
+body {
+    background-color: var(--header-color);
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+:root {
+    --font-color: #ffffff;
+    --header-color: #ccc;
+    --color-fonte: #000000;
+    --primary-color: #5F6F52;
+    --secundary-color: #A9B388;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    align-items: center;
+    padding: 0 20px;
+    border: 1px solid var(--color-fonte);
+}
+
+nav .nav-left {
+    margin-left: 10px;
+}
+
+nav img {
+    width: 40px;
+    height: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-fonte);
+    font-size: 20px;
+}
+
+.links-center {
+    display: flex;
+    gap: 80px;
+}
+
+.nav-right {
+    font-size: 15px;
+    margin-right: 30px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    width: 111px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    transition: 0.5s;
+}
+
+.nav-right:hover {
+    background-color: var(--secundary-color);
+    transition: 0.5s;
+}
+
+/* Começa o container do main */
+.container-main {
+    display: flex;
+    position: relative;
+    height: 900px;
+    overflow: hidden;
+}
+
+.container-main img{
+    filter: brightness(50%)
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--font-color);
+    z-index: 10;
+}
+
+.content h1 {
+    font-size: 48px;
+     margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.content button {
+    width: 130px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--font-color);
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.content button:hover {
+    background-color: var(--secundary-color);
+    transition: 0.5s;
+}
