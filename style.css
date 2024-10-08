@@ -1,5 +1,4 @@
 body {
-    background-color: var(--header-color);
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -27,6 +26,8 @@ header nav {
     align-items: center;
     padding: 0 20px;
     border: 1px solid var(--color-fonte);
+
+    background-color: var(--header-color);
 }
 
 nav .nav-left {
@@ -149,7 +150,7 @@ nav a {
     gap: 40px;
     flex-wrap: wrap;
     margin-top: 50px;
- 
+
 }
 
 .card {
@@ -176,5 +177,70 @@ nav a {
     width: 120px;
     height: 28px;
     margin-bottom: 10px;
+    height: 100%;
+}
 
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid var(--color-fonte);
+    background-color: var(--font-color);
+    padding: 40px 0;
+    margin-top: 15%;
+    gap: 70px;
+}
+
+.footer-left {
+    padding: 20px;
+    width: 25rem; /* equivalente a 400px */
+}
+
+.footer-left p {
+    font-size: 1rem;
+}
+
+.input-button {
+    display: flex;
+    gap: 0.625rem; /* 10px */
+}
+
+.input-button button {
+    background-color: var(--font-color);
+    border: none;
+    border: 1px solid var(--color-fonte);
+    width: 100%;
+}
+
+.input-button input {
+    width: 16.875rem; /* equivalente a 270px */
+    height: 1.75rem; /* 28px */
+    border: 1px solid var(--color-fonte);
+}
+
+.footer-text {
+    padding: 40px;
+    text-align: center;
+    width: 18.75rem; /* 300px */
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-fonte);
+    width: 18.75rem;
+    padding: 40px;
+}
+
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-fonte);
+    margin: 5px 0;
+}
+
+.redes-sociais a img {
+    width: 20px;
+    height: 20px;
 }
