@@ -1,0 +1,154 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+:root {
+    --font-color: #ffffff;
+    --header-color: #ccc;
+    --color-fonte: #000000;
+    --primary-color: #5F6F52;
+    --secundary-color: #A9B388;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    align-items: center;
+    padding: 0 20px;
+    border: 1px solid var(--color-fonte);
+    background-color: var(--font-color);
+}
+
+nav .nav-left {
+    margin-left: 10px;
+}
+
+nav img {
+    width: 40px;
+    height: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-fonte);
+    font-size: 20px;
+}
+
+.links-center {
+    display: flex;
+    gap: 80px;
+}
+
+.nav-right {
+    font-size: 15px;
+    margin-right: 30px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    width: 111px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    transition: 0.5s;
+}
+
+.nav-right:hover {
+    background-color: var(--secundary-color);
+    transition: 0.5s;
+}
+
+
+.contact-container {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #8244441a;
+    overflow: hidden;
+    width: 100%;
+}
+
+.contact-esquerda {
+    display: none;  
+    background-color: #c4e5ce;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.contact-esquerda img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.redes-sociais {
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    display: ineline;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.redes-sociais a img{
+    width: 40px;
+}
+
+.contact-direita {
+    padding: 40px;
+    width: 50%;
+    background-color: #ccc;
+}
+
+.contact-direita form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-direita label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-direita input,
+.contact-direita textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-direita button {
+    padding: 10px;
+    background-color: #57654c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-direita button:hover {
+    background-color: #4c8027;
+}
+
+
+@media (max-width: 480px) {
+
+   
+
+    

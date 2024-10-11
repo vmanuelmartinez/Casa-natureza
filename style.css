@@ -71,12 +71,15 @@ nav a {
 .container-main {
     display: flex;
     position: relative;
-    height: 900px;
+    height: 600px;
     overflow: hidden;
 }
 
 .container-main img {
-    filter: brightness(50%)
+    filter: brightness(50%);
+    width: 100%;
+    height: 100%;
+    
 }
 
 .content {
@@ -117,7 +120,6 @@ nav a {
 }
 
 /* Section Collection */
-
 .collection {
     height: 100%;
     background-color: var(--font-color);
@@ -125,9 +127,9 @@ nav a {
 }
 
 .titulos {
-    align-items: center;
-    justify-content: center;
     display: flex;
+    align-items: center;
+    justify-content: center;   
     height: 60px;
     border: 1px solid var(--color-fonte);
     gap: 85px;
