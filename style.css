@@ -26,7 +26,6 @@ header nav {
     align-items: center;
     padding: 0 20px;
     border: 1px solid var(--color-fonte);
-
     background-color: var(--header-color);
 }
 

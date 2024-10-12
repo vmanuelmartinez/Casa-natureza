@@ -11,6 +11,7 @@ body {
     }
 }
 
+
 :root {
     --font-color: #ffffff;
     --header-color: #ccc;
@@ -26,7 +27,7 @@ header nav {
     align-items: center;
     padding: 0 20px;
     border: 1px solid var(--color-fonte);
-    background-color: var(--font-color);
+    background-color: var(--header-color);
 }
 
 nav .nav-left {
@@ -66,89 +67,149 @@ nav a {
     transition: 0.5s;
 }
 
-
-.contact-container {
+.sobre-nos {
+    margin-top: 0;
     display: flex;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #8244441a;
-    overflow: hidden;
-    width: 100%;
-}
-
-.contact-esquerda {
-    display: none;  
-    background-color: #c4e5ce;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    justify-content:space-around;
+    background-color:var(--font-color);
+    margin-top: 6rem;
+    gap: 30px;
+    height: 100%;
+}
+
+.content {
+    gap: 2px;
+    width: 50rem;
+    display: flex;
     justify-content: center;
-    width: 50%;
+    background-color: var(--font-color);
+    border-radius: 5px;
+    border: 1px solid var(--color-fonte);
 }
 
-.contact-esquerda img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.redes-sociais {
-    margin-top: 20px;
-}
-
-.redes-sociais a {
-    display: ineline;
-    color: #333;
-    text-decoration: none;
-    margin-bottom: 10px;
-    transition: color 0.3s;
-}
-
-.redes-sociais a img{
-    width: 40px;
-}
-
-.contact-direita {
-    padding: 40px;
-    width: 50%;
-    background-color: #ccc;
-}
-
-.contact-direita form {
+.text-sobre-nos {
+    margin: auto;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    height: 250px;
+    word-spacing: normal;
+    width: 400px;
+    border: 1px solid var(--color-fonte);
+
+    p{
+        text-align: justify;
+        word-spacing: normal;
+    }
+
 }
 
-.contact-direita label {
-    margin-bottom: 8px;
+.img-sobre-nos{
+    
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 280px;
+    height: 290px;
+
+}
+
+.img-sobre-nos>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+/*Redes sociais */
+.titulos {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    height: 60px;
+    border: 1px solid var(--color-fonte);
+    gap: 20px;
+}
+
+.titulos a {
+    color: var(--color-fonte);
     font-weight: bold;
 }
 
-.contact-direita input,
-.contact-direita textarea {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.contact-direita button {
-    padding: 10px;
-    background-color: #57654c;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+.titulos>img{
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-direita button:hover {
-    background-color: #4c8027;
 }
 
 
-@media (max-width: 480px) {
+/*Começa o footer do Sobre-nos*/
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid var(--color-fonte);
+    background-color: var(--font-color);
+    padding: 40px 0;
+    margin-top: 5rem;
+    gap: 70px;
+}
 
-   
+.footer-left {
+    padding: 20px;
+    width: 25rem; /* equivalente a 400px */
+}
 
-    
+.footer-left p {
+    font-size: 1rem;
+}
+
+.input-button {
+    display: flex;
+    gap: 0.625rem; /* 10px */
+}
+
+.input-button button {
+    background-color: var(--font-color);
+    border: none;
+    border: 1px solid var(--color-fonte);
+    width: 100%;
+}
+
+.input-button input {
+    width: 16.875rem; /* equivalente a 270px */
+    height: 1.75rem; /* 28px */
+    border: 1px solid var(--color-fonte);
+}
+
+.footer-text {
+    padding: 40px;
+    text-align: center;
+    width: 18.75rem; /* 300px */
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-fonte);
+    width: 18.75rem;
+    padding: 40px;
+}
+
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-fonte);
+    margin: 5px 0;
+}
+
+.redes-sociais a img {
+    width: 20px;
+    height: 20px;
+}
+
+
